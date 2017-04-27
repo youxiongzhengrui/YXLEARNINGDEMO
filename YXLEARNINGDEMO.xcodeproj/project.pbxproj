@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1633B1021E31F51A006A72CD /* YXDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1633B1011E31F51A006A72CD /* YXDataBase.m */; };
+		1643DA251D7FF1E700E0032D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1643DA241D7FF1E700E0032D /* AppDelegate.m */; };
+		1643DA2A1D7FFE8200E0032D /* YXRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1643DA281D7FFE8200E0032D /* YXRootViewController.m */; };
+		1643DA2B1D7FFE8200E0032D /* YXRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1643DA291D7FFE8200E0032D /* YXRootViewController.xib */; };
+		16497AD51D86821B00DBA05C /* YXDrawingViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 16497AD41D86821B00DBA05C /* YXDrawingViewOne.m */; };
+		16644DFF1E2F6800000B6084 /* YXRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16644DFE1E2F6800000B6084 /* YXRunTimeViewController.m */; };
+		16644E021E30B342000B6084 /* YXFlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16644E011E30B342000B6084 /* YXFlowerView.m */; };
+		169E864E1DAB7180004469F1 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E864D1DAB7180004469F1 /* UIColor+Hex.m */; };
+		169E86CF1DAB86B0004469F1 /* YXSixTypeDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E86CE1DAB86B0004469F1 /* YXSixTypeDrawingView.m */; };
+		169E86D21DACB80A004469F1 /* YXCGContextRefView.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E86D11DACB80A004469F1 /* YXCGContextRefView.m */; };
+		16D2B6611D7FB2DA005CAE2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D2B6601D7FB2DA005CAE2C /* main.m */; };
+		16D2B66A1D7FB2DA005CAE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D2B6681D7FB2DA005CAE2C /* Main.storyboard */; };
+		16D2B66C1D7FB2DA005CAE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D2B66B1D7FB2DA005CAE2C /* Assets.xcassets */; };
+		16D2B66F1D7FB2DA005CAE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D2B66D1D7FB2DA005CAE2C /* LaunchScreen.storyboard */; };
+		16D2B67A1D7FB2DA005CAE2C /* YXLEARNINGDEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D2B6791D7FB2DA005CAE2C /* YXLEARNINGDEMOTests.m */; };
+		16D2B6851D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D2B6841D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests.m */; };
+		16D300951E518281000FA32A /* YXBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16D300941E518281000FA32A /* YXBlockViewController.m */; };
+		16E45F731DF02EFB001BFA0F /* YXCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E45F721DF02EFB001BFA0F /* YXCacheViewController.m */; };
+		16ED5BBE1E63C4DD002DD8CC /* YXMainDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED5BBC1E63C4DD002DD8CC /* YXMainDrawingViewController.m */; };
+		16ED5BBF1E63C4DD002DD8CC /* YXMainDrawingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16ED5BBD1E63C4DD002DD8CC /* YXMainDrawingViewController.xib */; };
+		16ED5BCD1E63CF0B002DD8CC /* YXCGContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED5BC21E63CF0B002DD8CC /* YXCGContextViewController.m */; };
+		16ED5BCE1E63CF0B002DD8CC /* YXCGContextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16ED5BC31E63CF0B002DD8CC /* YXCGContextViewController.xib */; };
+		16ED5BCF1E63CF0B002DD8CC /* YXDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED5BC51E63CF0B002DD8CC /* YXDemoViewController.m */; };
+		16ED5BD01E63CF0B002DD8CC /* YXDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED5BC71E63CF0B002DD8CC /* YXDrawingViewController.m */; };
+		16ED5BD11E63CF0B002DD8CC /* YXDrawingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16ED5BC81E63CF0B002DD8CC /* YXDrawingViewController.xib */; };
+		16ED5BD21E63CF0B002DD8CC /* YXShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED5BCA1E63CF0B002DD8CC /* YXShowViewController.m */; };
+		16ED5BD31E63CF0B002DD8CC /* YXShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16ED5BCB1E63CF0B002DD8CC /* YXShowViewController.xib */; };
+		16ED5BD71E63CF31002DD8CC /* YXGesturePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED5BD51E63CF31002DD8CC /* YXGesturePasswordViewController.m */; };
+		16ED5BD81E63CF31002DD8CC /* YXGesturePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16ED5BD61E63CF31002DD8CC /* YXGesturePasswordViewController.xib */; };
+		16ED5BDD1E642EFD002DD8CC /* YXGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED5BDC1E642EFD002DD8CC /* YXGestureView.m */; };
+		16ED5BE01E642F8F002DD8CC /* YXGeetureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED5BDF1E642F8F002DD8CC /* YXGeetureViewController.m */; };
+		472725D6887768048876FDF0 /* libPods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE43AC93E37EC9DA0333F24 /* libPods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.a */; };
+		E77217DA212AA8820EEED337 /* libPods-YXLEARNINGDEMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D2ED458C5CCC7167C903CF /* libPods-YXLEARNINGDEMO.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16D2B6761D7FB2DA005CAE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16D2B6541D7FB2DA005CAE2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16D2B65B1D7FB2DA005CAE2C;
+			remoteInfo = YXLEARNINGDEMO;
+		};
+		16D2B6811D7FB2DA005CAE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16D2B6541D7FB2DA005CAE2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16D2B65B1D7FB2DA005CAE2C;
+			remoteInfo = YXLEARNINGDEMO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1633B1001E31F51A006A72CD /* YXDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDataBase.h; sourceTree = "<group>"; };
+		1633B1011E31F51A006A72CD /* YXDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXDataBase.m; sourceTree = "<group>"; };
+		1643DA231D7FF1E700E0032D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1643DA241D7FF1E700E0032D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1643DA271D7FFE8200E0032D /* YXRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRootViewController.h; sourceTree = "<group>"; };
+		1643DA281D7FFE8200E0032D /* YXRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRootViewController.m; sourceTree = "<group>"; };
+		1643DA291D7FFE8200E0032D /* YXRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXRootViewController.xib; sourceTree = "<group>"; };
+		16497AD31D86821B00DBA05C /* YXDrawingViewOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDrawingViewOne.h; sourceTree = "<group>"; };
+		16497AD41D86821B00DBA05C /* YXDrawingViewOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXDrawingViewOne.m; sourceTree = "<group>"; };
+		16644DFD1E2F6800000B6084 /* YXRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRunTimeViewController.h; sourceTree = "<group>"; };
+		16644DFE1E2F6800000B6084 /* YXRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRunTimeViewController.m; sourceTree = "<group>"; };
+		16644E001E30B342000B6084 /* YXFlowerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFlowerView.h; sourceTree = "<group>"; };
+		16644E011E30B342000B6084 /* YXFlowerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXFlowerView.m; sourceTree = "<group>"; };
+		169E864C1DAB7180004469F1 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		169E864D1DAB7180004469F1 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		169E86CD1DAB86B0004469F1 /* YXSixTypeDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXSixTypeDrawingView.h; sourceTree = "<group>"; };
+		169E86CE1DAB86B0004469F1 /* YXSixTypeDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXSixTypeDrawingView.m; sourceTree = "<group>"; };
+		169E86D01DACB80A004469F1 /* YXCGContextRefView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXCGContextRefView.h; sourceTree = "<group>"; };
+		169E86D11DACB80A004469F1 /* YXCGContextRefView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXCGContextRefView.m; sourceTree = "<group>"; };
+		16D2B65C1D7FB2DA005CAE2C /* YXLEARNINGDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXLEARNINGDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D2B6601D7FB2DA005CAE2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16D2B6691D7FB2DA005CAE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16D2B66B1D7FB2DA005CAE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16D2B66E1D7FB2DA005CAE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16D2B6701D7FB2DA005CAE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D2B6751D7FB2DA005CAE2C /* YXLEARNINGDEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXLEARNINGDEMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D2B6791D7FB2DA005CAE2C /* YXLEARNINGDEMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLEARNINGDEMOTests.m; sourceTree = "<group>"; };
+		16D2B67B1D7FB2DA005CAE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D2B6801D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXLEARNINGDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D2B6841D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXLEARNINGDEMOUITests.m; sourceTree = "<group>"; };
+		16D2B6861D7FB2DA005CAE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D300931E518281000FA32A /* YXBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXBlockViewController.h; sourceTree = "<group>"; };
+		16D300941E518281000FA32A /* YXBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXBlockViewController.m; sourceTree = "<group>"; };
+		16E45F711DF02EFB001BFA0F /* YXCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXCacheViewController.h; sourceTree = "<group>"; };
+		16E45F721DF02EFB001BFA0F /* YXCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXCacheViewController.m; sourceTree = "<group>"; };
+		16ED5BBB1E63C4DD002DD8CC /* YXMainDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXMainDrawingViewController.h; sourceTree = "<group>"; };
+		16ED5BBC1E63C4DD002DD8CC /* YXMainDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXMainDrawingViewController.m; sourceTree = "<group>"; };
+		16ED5BBD1E63C4DD002DD8CC /* YXMainDrawingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXMainDrawingViewController.xib; sourceTree = "<group>"; };
+		16ED5BC11E63CF0B002DD8CC /* YXCGContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXCGContextViewController.h; sourceTree = "<group>"; };
+		16ED5BC21E63CF0B002DD8CC /* YXCGContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXCGContextViewController.m; sourceTree = "<group>"; };
+		16ED5BC31E63CF0B002DD8CC /* YXCGContextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXCGContextViewController.xib; sourceTree = "<group>"; };
+		16ED5BC41E63CF0B002DD8CC /* YXDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDemoViewController.h; sourceTree = "<group>"; };
+		16ED5BC51E63CF0B002DD8CC /* YXDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXDemoViewController.m; sourceTree = "<group>"; };
+		16ED5BC61E63CF0B002DD8CC /* YXDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDrawingViewController.h; sourceTree = "<group>"; };
+		16ED5BC71E63CF0B002DD8CC /* YXDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXDrawingViewController.m; sourceTree = "<group>"; };
+		16ED5BC81E63CF0B002DD8CC /* YXDrawingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXDrawingViewController.xib; sourceTree = "<group>"; };
+		16ED5BC91E63CF0B002DD8CC /* YXShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXShowViewController.h; sourceTree = "<group>"; };
+		16ED5BCA1E63CF0B002DD8CC /* YXShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXShowViewController.m; sourceTree = "<group>"; };
+		16ED5BCB1E63CF0B002DD8CC /* YXShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXShowViewController.xib; sourceTree = "<group>"; };
+		16ED5BD41E63CF31002DD8CC /* YXGesturePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXGesturePasswordViewController.h; sourceTree = "<group>"; };
+		16ED5BD51E63CF31002DD8CC /* YXGesturePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXGesturePasswordViewController.m; sourceTree = "<group>"; };
+		16ED5BD61E63CF31002DD8CC /* YXGesturePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXGesturePasswordViewController.xib; sourceTree = "<group>"; };
+		16ED5BD91E63CFF6002DD8CC /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		16ED5BDA1E63D007002DD8CC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		16ED5BDB1E642EFD002DD8CC /* YXGestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXGestureView.h; sourceTree = "<group>"; };
+		16ED5BDC1E642EFD002DD8CC /* YXGestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXGestureView.m; sourceTree = "<group>"; };
+		16ED5BDE1E642F8F002DD8CC /* YXGeetureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXGeetureViewController.h; sourceTree = "<group>"; };
+		16ED5BDF1E642F8F002DD8CC /* YXGeetureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXGeetureViewController.m; sourceTree = "<group>"; };
+		1D2375C0D004986884ADF2AE /* Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests/Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DE43AC93E37EC9DA0333F24 /* libPods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD16254A9807E519A5F4E53 /* Pods-YXLEARNINGDEMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXLEARNINGDEMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXLEARNINGDEMO/Pods-YXLEARNINGDEMO.release.xcconfig"; sourceTree = "<group>"; };
+		953A5E8C1C497A632F9E6B69 /* Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests/Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.release.xcconfig"; sourceTree = "<group>"; };
+		A0D2ED458C5CCC7167C903CF /* libPods-YXLEARNINGDEMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YXLEARNINGDEMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5D2D8C9E96837902BDF2EA /* Pods-YXLEARNINGDEMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXLEARNINGDEMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YXLEARNINGDEMO/Pods-YXLEARNINGDEMO.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16D2B6591D7FB2DA005CAE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77217DA212AA8820EEED337 /* libPods-YXLEARNINGDEMO.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D2B6721D7FB2DA005CAE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				472725D6887768048876FDF0 /* libPods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D2B67D1D7FB2DA005CAE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1633B0FE1E31F4BB006A72CD /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				1633B0FF1E31F4E0006A72CD /* FMDB */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		1633B0FF1E31F4E0006A72CD /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				1633B1001E31F51A006A72CD /* YXDataBase.h */,
+				1633B1011E31F51A006A72CD /* YXDataBase.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		1643DA221D7FF1E700E0032D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1643DA231D7FF1E700E0032D /* AppDelegate.h */,
+				1643DA241D7FF1E700E0032D /* AppDelegate.m */,
+				1643DA271D7FFE8200E0032D /* YXRootViewController.h */,
+				1643DA281D7FFE8200E0032D /* YXRootViewController.m */,
+				1643DA291D7FFE8200E0032D /* YXRootViewController.xib */,
+				16ED5BDA1E63D007002DD8CC /* PrefixHeader.pch */,
+				16ED5BD91E63CFF6002DD8CC /* Header.h */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1643DA261D7FFE4700E0032D /* DrawAndAnimation(绘图动画) */ = {
+			isa = PBXGroup;
+			children = (
+				16497AD21D865EE500DBA05C /* View */,
+				16497ACA1D865E8900DBA05C /* Controller */,
+			);
+			path = "DrawAndAnimation(绘图动画)";
+			sourceTree = "<group>";
+		};
+		16497ACA1D865E8900DBA05C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16ED5BBB1E63C4DD002DD8CC /* YXMainDrawingViewController.h */,
+				16ED5BBC1E63C4DD002DD8CC /* YXMainDrawingViewController.m */,
+				16ED5BBD1E63C4DD002DD8CC /* YXMainDrawingViewController.xib */,
+				16ED5BC01E63CF0B002DD8CC /* Drawing(绘图) */,
+				16ED5BCC1E63CF0B002DD8CC /* Gesture(手势) */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		16497AD21D865EE500DBA05C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16497AD31D86821B00DBA05C /* YXDrawingViewOne.h */,
+				16497AD41D86821B00DBA05C /* YXDrawingViewOne.m */,
+				169E86CD1DAB86B0004469F1 /* YXSixTypeDrawingView.h */,
+				169E86CE1DAB86B0004469F1 /* YXSixTypeDrawingView.m */,
+				169E86D01DACB80A004469F1 /* YXCGContextRefView.h */,
+				169E86D11DACB80A004469F1 /* YXCGContextRefView.m */,
+				16644E001E30B342000B6084 /* YXFlowerView.h */,
+				16644E011E30B342000B6084 /* YXFlowerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16644DF91E2F665D000B6084 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				16644DFD1E2F6800000B6084 /* YXRunTimeViewController.h */,
+				16644DFE1E2F6800000B6084 /* YXRunTimeViewController.m */,
+				16D300931E518281000FA32A /* YXBlockViewController.h */,
+				16D300941E518281000FA32A /* YXBlockViewController.m */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		169E864B1DAB7180004469F1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				169E864C1DAB7180004469F1 /* UIColor+Hex.h */,
+				169E864D1DAB7180004469F1 /* UIColor+Hex.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		16D2B6531D7FB2DA005CAE2C = {
+			isa = PBXGroup;
+			children = (
+				16D2B65E1D7FB2DA005CAE2C /* YXLEARNINGDEMO */,
+				16D2B6781D7FB2DA005CAE2C /* YXLEARNINGDEMOTests */,
+				16D2B6831D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests */,
+				16D2B65D1D7FB2DA005CAE2C /* Products */,
+				31C511356F909E57F2E9CDAF /* Pods */,
+				A9B6CB4570FE442C4A318ACC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		16D2B65D1D7FB2DA005CAE2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16D2B65C1D7FB2DA005CAE2C /* YXLEARNINGDEMO.app */,
+				16D2B6751D7FB2DA005CAE2C /* YXLEARNINGDEMOTests.xctest */,
+				16D2B6801D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16D2B65E1D7FB2DA005CAE2C /* YXLEARNINGDEMO */ = {
+			isa = PBXGroup;
+			children = (
+				1643DA221D7FF1E700E0032D /* Application */,
+				16E45F6C1DF022AD001BFA0F /* BaseKnowledge */,
+				169E864B1DAB7180004469F1 /* Categories */,
+				1643DA261D7FFE4700E0032D /* DrawAndAnimation(绘图动画) */,
+				1633B0FE1E31F4BB006A72CD /* ThirdParty */,
+				16D2B65F1D7FB2DA005CAE2C /* Supporting Files */,
+			);
+			path = YXLEARNINGDEMO;
+			sourceTree = "<group>";
+		};
+		16D2B65F1D7FB2DA005CAE2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16D2B6681D7FB2DA005CAE2C /* Main.storyboard */,
+				16D2B66B1D7FB2DA005CAE2C /* Assets.xcassets */,
+				16D2B66D1D7FB2DA005CAE2C /* LaunchScreen.storyboard */,
+				16D2B6701D7FB2DA005CAE2C /* Info.plist */,
+				16D2B6601D7FB2DA005CAE2C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16D2B6781D7FB2DA005CAE2C /* YXLEARNINGDEMOTests */ = {
+			isa = PBXGroup;
+			children = (
+				16D2B6791D7FB2DA005CAE2C /* YXLEARNINGDEMOTests.m */,
+				16D2B67B1D7FB2DA005CAE2C /* Info.plist */,
+			);
+			path = YXLEARNINGDEMOTests;
+			sourceTree = "<group>";
+		};
+		16D2B6831D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16D2B6841D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests.m */,
+				16D2B6861D7FB2DA005CAE2C /* Info.plist */,
+			);
+			path = YXLEARNINGDEMOUITests;
+			sourceTree = "<group>";
+		};
+		16E45F6C1DF022AD001BFA0F /* BaseKnowledge */ = {
+			isa = PBXGroup;
+			children = (
+				16644DF91E2F665D000B6084 /* OC */,
+				16E45F6D1DF022AD001BFA0F /* UI */,
+			);
+			path = BaseKnowledge;
+			sourceTree = "<group>";
+		};
+		16E45F6D1DF022AD001BFA0F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				16E45F711DF02EFB001BFA0F /* YXCacheViewController.h */,
+				16E45F721DF02EFB001BFA0F /* YXCacheViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		16ED5BC01E63CF0B002DD8CC /* Drawing(绘图) */ = {
+			isa = PBXGroup;
+			children = (
+				16ED5BC11E63CF0B002DD8CC /* YXCGContextViewController.h */,
+				16ED5BC21E63CF0B002DD8CC /* YXCGContextViewController.m */,
+				16ED5BC31E63CF0B002DD8CC /* YXCGContextViewController.xib */,
+				16ED5BC41E63CF0B002DD8CC /* YXDemoViewController.h */,
+				16ED5BC51E63CF0B002DD8CC /* YXDemoViewController.m */,
+				16ED5BC61E63CF0B002DD8CC /* YXDrawingViewController.h */,
+				16ED5BC71E63CF0B002DD8CC /* YXDrawingViewController.m */,
+				16ED5BC81E63CF0B002DD8CC /* YXDrawingViewController.xib */,
+				16ED5BC91E63CF0B002DD8CC /* YXShowViewController.h */,
+				16ED5BCA1E63CF0B002DD8CC /* YXShowViewController.m */,
+				16ED5BCB1E63CF0B002DD8CC /* YXShowViewController.xib */,
+			);
+			path = "Drawing(绘图)";
+			sourceTree = "<group>";
+		};
+		16ED5BCC1E63CF0B002DD8CC /* Gesture(手势) */ = {
+			isa = PBXGroup;
+			children = (
+				16ED5BD41E63CF31002DD8CC /* YXGesturePasswordViewController.h */,
+				16ED5BD51E63CF31002DD8CC /* YXGesturePasswordViewController.m */,
+				16ED5BD61E63CF31002DD8CC /* YXGesturePasswordViewController.xib */,
+				16ED5BDE1E642F8F002DD8CC /* YXGeetureViewController.h */,
+				16ED5BDF1E642F8F002DD8CC /* YXGeetureViewController.m */,
+				16ED5BDB1E642EFD002DD8CC /* YXGestureView.h */,
+				16ED5BDC1E642EFD002DD8CC /* YXGestureView.m */,
+			);
+			path = "Gesture(手势)";
+			sourceTree = "<group>";
+		};
+		31C511356F909E57F2E9CDAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD5D2D8C9E96837902BDF2EA /* Pods-YXLEARNINGDEMO.debug.xcconfig */,
+				7FD16254A9807E519A5F4E53 /* Pods-YXLEARNINGDEMO.release.xcconfig */,
+				1D2375C0D004986884ADF2AE /* Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.debug.xcconfig */,
+				953A5E8C1C497A632F9E6B69 /* Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9B6CB4570FE442C4A318ACC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0D2ED458C5CCC7167C903CF /* libPods-YXLEARNINGDEMO.a */,
+				3DE43AC93E37EC9DA0333F24 /* libPods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16D2B65B1D7FB2DA005CAE2C /* YXLEARNINGDEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D2B6891D7FB2DA005CAE2C /* Build configuration list for PBXNativeTarget "YXLEARNINGDEMO" */;
+			buildPhases = (
+				7DCE74CD44205050638A4FA6 /* [CP] Check Pods Manifest.lock */,
+				16D2B6581D7FB2DA005CAE2C /* Sources */,
+				16D2B6591D7FB2DA005CAE2C /* Frameworks */,
+				16D2B65A1D7FB2DA005CAE2C /* Resources */,
+				9554B2DB88D176FA467CA11F /* [CP] Embed Pods Frameworks */,
+				56981D365517CA2BB2ABE8F3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YXLEARNINGDEMO;
+			productName = YXLEARNINGDEMO;
+			productReference = 16D2B65C1D7FB2DA005CAE2C /* YXLEARNINGDEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16D2B6741D7FB2DA005CAE2C /* YXLEARNINGDEMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D2B68C1D7FB2DA005CAE2C /* Build configuration list for PBXNativeTarget "YXLEARNINGDEMOTests" */;
+			buildPhases = (
+				E192FD95F6F2897CE3296D34 /* [CP] Check Pods Manifest.lock */,
+				16D2B6711D7FB2DA005CAE2C /* Sources */,
+				16D2B6721D7FB2DA005CAE2C /* Frameworks */,
+				16D2B6731D7FB2DA005CAE2C /* Resources */,
+				4278C9D1AE7F720DA20A59D0 /* [CP] Embed Pods Frameworks */,
+				8990D86A891311222F3208BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16D2B6771D7FB2DA005CAE2C /* PBXTargetDependency */,
+			);
+			name = YXLEARNINGDEMOTests;
+			productName = YXLEARNINGDEMOTests;
+			productReference = 16D2B6751D7FB2DA005CAE2C /* YXLEARNINGDEMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16D2B67F1D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D2B68F1D7FB2DA005CAE2C /* Build configuration list for PBXNativeTarget "YXLEARNINGDEMOUITests" */;
+			buildPhases = (
+				16D2B67C1D7FB2DA005CAE2C /* Sources */,
+				16D2B67D1D7FB2DA005CAE2C /* Frameworks */,
+				16D2B67E1D7FB2DA005CAE2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16D2B6821D7FB2DA005CAE2C /* PBXTargetDependency */,
+			);
+			name = YXLEARNINGDEMOUITests;
+			productName = YXLEARNINGDEMOUITests;
+			productReference = 16D2B6801D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16D2B6541D7FB2DA005CAE2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YX;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "~YXzr~";
+				TargetAttributes = {
+					16D2B65B1D7FB2DA005CAE2C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 64QULGHA36;
+						ProvisioningStyle = Automatic;
+					};
+					16D2B6741D7FB2DA005CAE2C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 16D2B65B1D7FB2DA005CAE2C;
+					};
+					16D2B67F1D7FB2DA005CAE2C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 16D2B65B1D7FB2DA005CAE2C;
+					};
+				};
+			};
+			buildConfigurationList = 16D2B6571D7FB2DA005CAE2C /* Build configuration list for PBXProject "YXLEARNINGDEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16D2B6531D7FB2DA005CAE2C;
+			productRefGroup = 16D2B65D1D7FB2DA005CAE2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16D2B65B1D7FB2DA005CAE2C /* YXLEARNINGDEMO */,
+				16D2B6741D7FB2DA005CAE2C /* YXLEARNINGDEMOTests */,
+				16D2B67F1D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16D2B65A1D7FB2DA005CAE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16ED5BD81E63CF31002DD8CC /* YXGesturePasswordViewController.xib in Resources */,
+				16ED5BD11E63CF0B002DD8CC /* YXDrawingViewController.xib in Resources */,
+				16ED5BBF1E63C4DD002DD8CC /* YXMainDrawingViewController.xib in Resources */,
+				16ED5BD31E63CF0B002DD8CC /* YXShowViewController.xib in Resources */,
+				16ED5BCE1E63CF0B002DD8CC /* YXCGContextViewController.xib in Resources */,
+				1643DA2B1D7FFE8200E0032D /* YXRootViewController.xib in Resources */,
+				16D2B66F1D7FB2DA005CAE2C /* LaunchScreen.storyboard in Resources */,
+				16D2B66C1D7FB2DA005CAE2C /* Assets.xcassets in Resources */,
+				16D2B66A1D7FB2DA005CAE2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D2B6731D7FB2DA005CAE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D2B67E1D7FB2DA005CAE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4278C9D1AE7F720DA20A59D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests/Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56981D365517CA2BB2ABE8F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXLEARNINGDEMO/Pods-YXLEARNINGDEMO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DCE74CD44205050638A4FA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8990D86A891311222F3208BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests/Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9554B2DB88D176FA467CA11F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YXLEARNINGDEMO/Pods-YXLEARNINGDEMO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E192FD95F6F2897CE3296D34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16D2B6581D7FB2DA005CAE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16ED5BD01E63CF0B002DD8CC /* YXDrawingViewController.m in Sources */,
+				16ED5BE01E642F8F002DD8CC /* YXGeetureViewController.m in Sources */,
+				16E45F731DF02EFB001BFA0F /* YXCacheViewController.m in Sources */,
+				16497AD51D86821B00DBA05C /* YXDrawingViewOne.m in Sources */,
+				16ED5BDD1E642EFD002DD8CC /* YXGestureView.m in Sources */,
+				16ED5BBE1E63C4DD002DD8CC /* YXMainDrawingViewController.m in Sources */,
+				16644DFF1E2F6800000B6084 /* YXRunTimeViewController.m in Sources */,
+				169E86D21DACB80A004469F1 /* YXCGContextRefView.m in Sources */,
+				16ED5BD21E63CF0B002DD8CC /* YXShowViewController.m in Sources */,
+				16644E021E30B342000B6084 /* YXFlowerView.m in Sources */,
+				1643DA251D7FF1E700E0032D /* AppDelegate.m in Sources */,
+				169E864E1DAB7180004469F1 /* UIColor+Hex.m in Sources */,
+				16ED5BD71E63CF31002DD8CC /* YXGesturePasswordViewController.m in Sources */,
+				1643DA2A1D7FFE8200E0032D /* YXRootViewController.m in Sources */,
+				16D2B6611D7FB2DA005CAE2C /* main.m in Sources */,
+				16ED5BCF1E63CF0B002DD8CC /* YXDemoViewController.m in Sources */,
+				1633B1021E31F51A006A72CD /* YXDataBase.m in Sources */,
+				16ED5BCD1E63CF0B002DD8CC /* YXCGContextViewController.m in Sources */,
+				16D300951E518281000FA32A /* YXBlockViewController.m in Sources */,
+				169E86CF1DAB86B0004469F1 /* YXSixTypeDrawingView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D2B6711D7FB2DA005CAE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D2B67A1D7FB2DA005CAE2C /* YXLEARNINGDEMOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16D2B67C1D7FB2DA005CAE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D2B6851D7FB2DA005CAE2C /* YXLEARNINGDEMOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16D2B6771D7FB2DA005CAE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16D2B65B1D7FB2DA005CAE2C /* YXLEARNINGDEMO */;
+			targetProxy = 16D2B6761D7FB2DA005CAE2C /* PBXContainerItemProxy */;
+		};
+		16D2B6821D7FB2DA005CAE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16D2B65B1D7FB2DA005CAE2C /* YXLEARNINGDEMO */;
+			targetProxy = 16D2B6811D7FB2DA005CAE2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16D2B6681D7FB2DA005CAE2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16D2B6691D7FB2DA005CAE2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16D2B66D1D7FB2DA005CAE2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16D2B66E1D7FB2DA005CAE2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16D2B6871D7FB2DA005CAE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16D2B6881D7FB2DA005CAE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16D2B68A1D7FB2DA005CAE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD5D2D8C9E96837902BDF2EA /* Pods-YXLEARNINGDEMO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 64QULGHA36;
+				GCC_PREFIX_HEADER = /Users/yxzr/Desktop/DEMO/YXLEARNINGDEMO/YXLEARNINGDEMO/Application/PrefixHeader.pch;
+				INFOPLIST_FILE = YXLEARNINGDEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXiongShi.YXLEARNINGDEMO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		16D2B68B1D7FB2DA005CAE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD16254A9807E519A5F4E53 /* Pods-YXLEARNINGDEMO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 64QULGHA36;
+				GCC_PREFIX_HEADER = /Users/yxzr/Desktop/DEMO/YXLEARNINGDEMO/YXLEARNINGDEMO/Application/PrefixHeader.pch;
+				INFOPLIST_FILE = YXLEARNINGDEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXiongShi.YXLEARNINGDEMO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		16D2B68D1D7FB2DA005CAE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D2375C0D004986884ADF2AE /* Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YXLEARNINGDEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXiongShi.YXLEARNINGDEMOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YXLEARNINGDEMO.app/YXLEARNINGDEMO";
+			};
+			name = Debug;
+		};
+		16D2B68E1D7FB2DA005CAE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 953A5E8C1C497A632F9E6B69 /* Pods-YXLEARNINGDEMO-YXLEARNINGDEMOTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YXLEARNINGDEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXiongShi.YXLEARNINGDEMOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YXLEARNINGDEMO.app/YXLEARNINGDEMO";
+			};
+			name = Release;
+		};
+		16D2B6901D7FB2DA005CAE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YXLEARNINGDEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXiongShi.YXLEARNINGDEMOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YXLEARNINGDEMO;
+			};
+			name = Debug;
+		};
+		16D2B6911D7FB2DA005CAE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YXLEARNINGDEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXiongShi.YXLEARNINGDEMOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YXLEARNINGDEMO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16D2B6571D7FB2DA005CAE2C /* Build configuration list for PBXProject "YXLEARNINGDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D2B6871D7FB2DA005CAE2C /* Debug */,
+				16D2B6881D7FB2DA005CAE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16D2B6891D7FB2DA005CAE2C /* Build configuration list for PBXNativeTarget "YXLEARNINGDEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D2B68A1D7FB2DA005CAE2C /* Debug */,
+				16D2B68B1D7FB2DA005CAE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16D2B68C1D7FB2DA005CAE2C /* Build configuration list for PBXNativeTarget "YXLEARNINGDEMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D2B68D1D7FB2DA005CAE2C /* Debug */,
+				16D2B68E1D7FB2DA005CAE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16D2B68F1D7FB2DA005CAE2C /* Build configuration list for PBXNativeTarget "YXLEARNINGDEMOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D2B6901D7FB2DA005CAE2C /* Debug */,
+				16D2B6911D7FB2DA005CAE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16D2B6541D7FB2DA005CAE2C /* Project object */;
+}

@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.0"
+target 'YXLEARNINGDEMO' do
+    pod 'Masonry'
+    pod 'FMDB', '~> 2.6.2'
+    
+    target 'YXLEARNINGDEMOTests' do
+        # pod 'Kiwi'
+    end
+end
+
+
+
