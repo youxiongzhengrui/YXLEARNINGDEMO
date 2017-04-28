@@ -37,6 +37,27 @@
 #pragma mark - UITableViewDelegate 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    //    if (cell == nil) {
+    //        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
+    //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //    }
+    //    cell.textLabel.text = self.titleArray[indexPath.row];
+    //    return cell;//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    //    if (cell == nil) {
+    //        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
+    //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //    }
+    //    cell.textLabel.text = self.titleArray[indexPath.row];
+    //    return cell;//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    //    if (cell == nil) {
+    //        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
+    //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //    }
+    //    cell.textLabel.text = self.titleArray[indexPath.row];
+    //    return cell;
+    
     return self.titleArray.count;
 }
 
