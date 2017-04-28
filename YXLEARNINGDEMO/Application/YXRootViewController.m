@@ -25,6 +25,13 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
 //    self.rootTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.titleArray = @[@"绘图动画", @"RunTime"];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
+//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    }
+//    cell.textLabel.text = self.titleArray[indexPath.row];
+//    return cell;
 }
 
 #pragma mark - UITableViewDelegate 
