@@ -9,6 +9,7 @@
 #import "YXRootViewController.h"
 #import "YXMainDrawingViewController.h"
 #import "YXRunTimeViewController.h"
+#import "YXGCDViewController.h"
 
 @interface YXRootViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *rootTableView;
@@ -21,43 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"~YXzr~";
-    // Do any additional setup after loading the view from its nib.
     self.edgesForExtendedLayout = UIRectEdgeNone;
 //    self.rootTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.titleArray = @[@"绘图动画", @"RunTime"];
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
-//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//    }
-//    cell.textLabel.text = self.titleArray[indexPath.row];
-//    return cell;
+    self.titleArray = @[@"绘图动画", @"RunTime", @"GCD"];
 }
 
 #pragma mark - UITableViewDelegate 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    //    if (cell == nil) {
-    //        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
-    //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //    }
-    //    cell.textLabel.text = self.titleArray[indexPath.row];
-    //    return cell;//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    //    if (cell == nil) {
-    //        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
-    //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //    }
-    //    cell.textLabel.text = self.titleArray[indexPath.row];
-    //    return cell;//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    //    if (cell == nil) {
-    //        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
-    //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //    }
-    //    cell.textLabel.text = self.titleArray[indexPath.row];
-    //    return cell;
-    
     return self.titleArray.count;
 }
 
@@ -80,7 +52,11 @@
     if (indexPath.row == 0) {
         YXMainDrawingViewController *mainDrawingVC = [[YXMainDrawingViewController alloc] init];
         [self.navigationController pushViewController:mainDrawingVC animated:YES];
-    }// else if (indexPath.row == 1) {
+    } else if (indexPath.row == 2) {
+        YXGCDViewController *gcdVC = [[YXGCDViewController alloc] init];
+        [self.navigationController pushViewController:gcdVC animated:YES];
+    }
+    // else if (indexPath.row == 1) {
 //        YXRunTimeViewController *runTimeVC = [[YXRunTimeViewController alloc] init];
 //        [self.navigationController pushViewController:runTimeVC animated:YES];
 //    }

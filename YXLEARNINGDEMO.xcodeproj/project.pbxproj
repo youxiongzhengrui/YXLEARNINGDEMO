@@ -12,6 +12,9 @@
 		1643DA2A1D7FFE8200E0032D /* YXRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1643DA281D7FFE8200E0032D /* YXRootViewController.m */; };
 		1643DA2B1D7FFE8200E0032D /* YXRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1643DA291D7FFE8200E0032D /* YXRootViewController.xib */; };
 		16497AD51D86821B00DBA05C /* YXDrawingViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 16497AD41D86821B00DBA05C /* YXDrawingViewOne.m */; };
+		1663464E1EF0D51F00243D63 /* YXGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663464C1EF0D51F00243D63 /* YXGCDViewController.m */; };
+		1663464F1EF0D51F00243D63 /* YXGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1663464D1EF0D51F00243D63 /* YXGCDViewController.xib */; };
+		166346541EF12E3400243D63 /* NSObject+YXKeyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 166346531EF12E3400243D63 /* NSObject+YXKeyValues.m */; };
 		16644DFF1E2F6800000B6084 /* YXRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16644DFE1E2F6800000B6084 /* YXRunTimeViewController.m */; };
 		16644E021E30B342000B6084 /* YXFlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16644E011E30B342000B6084 /* YXFlowerView.m */; };
 		169E864E1DAB7180004469F1 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E864D1DAB7180004469F1 /* UIColor+Hex.m */; };
@@ -69,6 +72,11 @@
 		1643DA291D7FFE8200E0032D /* YXRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXRootViewController.xib; sourceTree = "<group>"; };
 		16497AD31D86821B00DBA05C /* YXDrawingViewOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXDrawingViewOne.h; sourceTree = "<group>"; };
 		16497AD41D86821B00DBA05C /* YXDrawingViewOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXDrawingViewOne.m; sourceTree = "<group>"; };
+		1663464B1EF0D51F00243D63 /* YXGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXGCDViewController.h; sourceTree = "<group>"; };
+		1663464C1EF0D51F00243D63 /* YXGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXGCDViewController.m; sourceTree = "<group>"; };
+		1663464D1EF0D51F00243D63 /* YXGCDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXGCDViewController.xib; sourceTree = "<group>"; };
+		166346521EF12E3400243D63 /* NSObject+YXKeyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YXKeyValues.h"; sourceTree = "<group>"; };
+		166346531EF12E3400243D63 /* NSObject+YXKeyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YXKeyValues.m"; sourceTree = "<group>"; };
 		16644DFD1E2F6800000B6084 /* YXRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRunTimeViewController.h; sourceTree = "<group>"; };
 		16644DFE1E2F6800000B6084 /* YXRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRunTimeViewController.m; sourceTree = "<group>"; };
 		16644E001E30B342000B6084 /* YXFlowerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFlowerView.h; sourceTree = "<group>"; };
@@ -220,6 +228,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1663464A1EEFEB8600243D63 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				1663464B1EF0D51F00243D63 /* YXGCDViewController.h */,
+				1663464C1EF0D51F00243D63 /* YXGCDViewController.m */,
+				1663464D1EF0D51F00243D63 /* YXGCDViewController.xib */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		166346511EF12DF100243D63 /* runtime(模型与字典互转) */ = {
+			isa = PBXGroup;
+			children = (
+				166346521EF12E3400243D63 /* NSObject+YXKeyValues.h */,
+				166346531EF12E3400243D63 /* NSObject+YXKeyValues.m */,
+			);
+			path = "runtime(模型与字典互转)";
+			sourceTree = "<group>";
+		};
 		16644DF91E2F665D000B6084 /* OC */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +261,7 @@
 		169E864B1DAB7180004469F1 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				166346511EF12DF100243D63 /* runtime(模型与字典互转) */,
 				169E864C1DAB7180004469F1 /* UIColor+Hex.h */,
 				169E864D1DAB7180004469F1 /* UIColor+Hex.m */,
 			);
@@ -308,6 +336,7 @@
 		16E45F6C1DF022AD001BFA0F /* BaseKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				1663464A1EEFEB8600243D63 /* GCD */,
 				16644DF91E2F665D000B6084 /* OC */,
 				16E45F6D1DF022AD001BFA0F /* UI */,
 			);
@@ -487,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1663464F1EF0D51F00243D63 /* YXGCDViewController.xib in Resources */,
 				16ED5BD81E63CF31002DD8CC /* YXGesturePasswordViewController.xib in Resources */,
 				16ED5BD11E63CF0B002DD8CC /* YXDrawingViewController.xib in Resources */,
 				16ED5BBF1E63C4DD002DD8CC /* YXMainDrawingViewController.xib in Resources */,
@@ -614,6 +644,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16ED5BD01E63CF0B002DD8CC /* YXDrawingViewController.m in Sources */,
+				1663464E1EF0D51F00243D63 /* YXGCDViewController.m in Sources */,
 				16ED5BE01E642F8F002DD8CC /* YXGeetureViewController.m in Sources */,
 				16E45F731DF02EFB001BFA0F /* YXCacheViewController.m in Sources */,
 				16497AD51D86821B00DBA05C /* YXDrawingViewOne.m in Sources */,
@@ -632,6 +663,7 @@
 				1633B1021E31F51A006A72CD /* YXDataBase.m in Sources */,
 				16ED5BCD1E63CF0B002DD8CC /* YXCGContextViewController.m in Sources */,
 				16D300951E518281000FA32A /* YXBlockViewController.m in Sources */,
+				166346541EF12E3400243D63 /* NSObject+YXKeyValues.m in Sources */,
 				169E86CF1DAB86B0004469F1 /* YXSixTypeDrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
