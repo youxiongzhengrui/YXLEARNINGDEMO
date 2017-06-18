@@ -15,6 +15,10 @@
 		1663464E1EF0D51F00243D63 /* YXGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663464C1EF0D51F00243D63 /* YXGCDViewController.m */; };
 		1663464F1EF0D51F00243D63 /* YXGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1663464D1EF0D51F00243D63 /* YXGCDViewController.xib */; };
 		166346541EF12E3400243D63 /* NSObject+YXKeyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 166346531EF12E3400243D63 /* NSObject+YXKeyValues.m */; };
+		1663465E1EF2786600243D63 /* YXChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663465D1EF2786600243D63 /* YXChartViewController.m */; };
+		166346611EF27CFC00243D63 /* YXChartShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166346601EF27CFC00243D63 /* YXChartShowViewController.m */; };
+		166346651EF2831500243D63 /* YXChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166346641EF2831500243D63 /* YXChartView.m */; };
+		166346681EF2838900243D63 /* YXBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166346671EF2838900243D63 /* YXBarChartView.m */; };
 		16644DFF1E2F6800000B6084 /* YXRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16644DFE1E2F6800000B6084 /* YXRunTimeViewController.m */; };
 		16644E021E30B342000B6084 /* YXFlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16644E011E30B342000B6084 /* YXFlowerView.m */; };
 		169E864E1DAB7180004469F1 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E864D1DAB7180004469F1 /* UIColor+Hex.m */; };
@@ -77,6 +81,14 @@
 		1663464D1EF0D51F00243D63 /* YXGCDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXGCDViewController.xib; sourceTree = "<group>"; };
 		166346521EF12E3400243D63 /* NSObject+YXKeyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YXKeyValues.h"; sourceTree = "<group>"; };
 		166346531EF12E3400243D63 /* NSObject+YXKeyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YXKeyValues.m"; sourceTree = "<group>"; };
+		1663465C1EF2786600243D63 /* YXChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXChartViewController.h; sourceTree = "<group>"; };
+		1663465D1EF2786600243D63 /* YXChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXChartViewController.m; sourceTree = "<group>"; };
+		1663465F1EF27CFC00243D63 /* YXChartShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXChartShowViewController.h; sourceTree = "<group>"; };
+		166346601EF27CFC00243D63 /* YXChartShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXChartShowViewController.m; sourceTree = "<group>"; };
+		166346631EF2831500243D63 /* YXChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXChartView.h; sourceTree = "<group>"; };
+		166346641EF2831500243D63 /* YXChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXChartView.m; sourceTree = "<group>"; };
+		166346661EF2838900243D63 /* YXBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXBarChartView.h; sourceTree = "<group>"; };
+		166346671EF2838900243D63 /* YXBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXBarChartView.m; sourceTree = "<group>"; };
 		16644DFD1E2F6800000B6084 /* YXRunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRunTimeViewController.h; sourceTree = "<group>"; };
 		16644DFE1E2F6800000B6084 /* YXRunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRunTimeViewController.m; sourceTree = "<group>"; };
 		16644E001E30B342000B6084 /* YXFlowerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFlowerView.h; sourceTree = "<group>"; };
@@ -195,6 +207,7 @@
 		1643DA261D7FFE4700E0032D /* DrawAndAnimation(绘图动画) */ = {
 			isa = PBXGroup;
 			children = (
+				166346591EF2765E00243D63 /* Chart(图表) */,
 				16497AD21D865EE500DBA05C /* View */,
 				16497ACA1D865E8900DBA05C /* Controller */,
 			);
@@ -245,6 +258,29 @@
 				166346531EF12E3400243D63 /* NSObject+YXKeyValues.m */,
 			);
 			path = "runtime(模型与字典互转)";
+			sourceTree = "<group>";
+		};
+		166346591EF2765E00243D63 /* Chart(图表) */ = {
+			isa = PBXGroup;
+			children = (
+				1663465C1EF2786600243D63 /* YXChartViewController.h */,
+				1663465D1EF2786600243D63 /* YXChartViewController.m */,
+				1663465F1EF27CFC00243D63 /* YXChartShowViewController.h */,
+				166346601EF27CFC00243D63 /* YXChartShowViewController.m */,
+				166346621EF282FB00243D63 /* ChartView */,
+			);
+			path = "Chart(图表)";
+			sourceTree = "<group>";
+		};
+		166346621EF282FB00243D63 /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				166346631EF2831500243D63 /* YXChartView.h */,
+				166346641EF2831500243D63 /* YXChartView.m */,
+				166346661EF2838900243D63 /* YXBarChartView.h */,
+				166346671EF2838900243D63 /* YXBarChartView.m */,
+			);
+			path = ChartView;
 			sourceTree = "<group>";
 		};
 		16644DF91E2F665D000B6084 /* OC */ = {
@@ -653,14 +689,18 @@
 				16644DFF1E2F6800000B6084 /* YXRunTimeViewController.m in Sources */,
 				169E86D21DACB80A004469F1 /* YXCGContextRefView.m in Sources */,
 				16ED5BD21E63CF0B002DD8CC /* YXShowViewController.m in Sources */,
+				166346681EF2838900243D63 /* YXBarChartView.m in Sources */,
 				16644E021E30B342000B6084 /* YXFlowerView.m in Sources */,
 				1643DA251D7FF1E700E0032D /* AppDelegate.m in Sources */,
 				169E864E1DAB7180004469F1 /* UIColor+Hex.m in Sources */,
 				16ED5BD71E63CF31002DD8CC /* YXGesturePasswordViewController.m in Sources */,
 				1643DA2A1D7FFE8200E0032D /* YXRootViewController.m in Sources */,
 				16D2B6611D7FB2DA005CAE2C /* main.m in Sources */,
+				166346651EF2831500243D63 /* YXChartView.m in Sources */,
 				16ED5BCF1E63CF0B002DD8CC /* YXDemoViewController.m in Sources */,
+				166346611EF27CFC00243D63 /* YXChartShowViewController.m in Sources */,
 				1633B1021E31F51A006A72CD /* YXDataBase.m in Sources */,
+				1663465E1EF2786600243D63 /* YXChartViewController.m in Sources */,
 				16ED5BCD1E63CF0B002DD8CC /* YXCGContextViewController.m in Sources */,
 				16D300951E518281000FA32A /* YXBlockViewController.m in Sources */,
 				166346541EF12E3400243D63 /* NSObject+YXKeyValues.m in Sources */,

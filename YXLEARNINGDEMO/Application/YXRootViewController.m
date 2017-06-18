@@ -10,6 +10,7 @@
 #import "YXMainDrawingViewController.h"
 #import "YXRunTimeViewController.h"
 #import "YXGCDViewController.h"
+#import "YXChartViewController.h"//图表汇总
 
 @interface YXRootViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *rootTableView;
@@ -19,12 +20,21 @@
 
 @implementation YXRootViewController
 
+- (NSArray *)titleArray {
+    if (!_titleArray) {
+        _titleArray = @[@"绘图动画",
+                        @"RunTime",
+                        @"GCD",
+                        @"图表汇总"];
+    }
+    return _titleArray;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"~YXzr~";
     self.edgesForExtendedLayout = UIRectEdgeNone;
 //    self.rootTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.titleArray = @[@"绘图动画", @"RunTime", @"GCD"];
 }
 
 #pragma mark - UITableViewDelegate 
@@ -49,12 +59,15 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
+    if (indexPath.row == 0) {//绘图基础
         YXMainDrawingViewController *mainDrawingVC = [[YXMainDrawingViewController alloc] init];
         [self.navigationController pushViewController:mainDrawingVC animated:YES];
-    } else if (indexPath.row == 2) {
+    } else if (indexPath.row == 2) {//GCD
         YXGCDViewController *gcdVC = [[YXGCDViewController alloc] init];
         [self.navigationController pushViewController:gcdVC animated:YES];
+    } else if (indexPath.row == 3) { //图表汇总
+        YXChartViewController *chartVC = [[YXChartViewController alloc] init];
+        [self.navigationController pushViewController:chartVC animated:YES];
     }
     // else if (indexPath.row == 1) {
 //        YXRunTimeViewController *runTimeVC = [[YXRunTimeViewController alloc] init];
