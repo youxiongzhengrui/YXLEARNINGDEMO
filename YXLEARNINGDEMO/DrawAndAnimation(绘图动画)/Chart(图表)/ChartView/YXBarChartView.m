@@ -91,7 +91,7 @@
     }
     if (max < 5.0) {
         _maxHeight = 5.0;
-    }else if(max < 10){
+    }else if (max < 10){
         _maxHeight = 10;
     }else {
         _maxHeight = max;
@@ -150,7 +150,7 @@
         [self setUpXY];
         [self setUpDashLine];
     }
-    [self setUpXShowInfoText];
+    [self addXShowInfoTextAndColumnView];
 }
 
 //X,Y轴线
@@ -189,16 +189,16 @@
     for (int i = 0; i < 5; i++) {
         NSInteger pace = self.maxHeight / 5;
         CGFloat height = self.perHeight * (i + 1) * pace;
-        CGFloat point_Y =  CGRectGetHeight(self.frame) - self.originSize.y - height;
+        CGFloat point_Y = CGRectGetHeight(self.frame) - self.originSize.y - height;
         [bezierPath moveToPoint:Point_M(self.originSize.x, point_Y)];
         [bezierPath addLineToPoint:Point_M(self.maxWidth, point_Y)];
         //辅助线文字
         CATextLayer *textLayer = [CATextLayer layer];
         
-        textLayer.contentsScale = [UIScreen mainScreen].scale;
+        textLayer.contentsScale = [UIScreen mainScreen].scale;//屏幕分辨率
         NSString *text =[NSString stringWithFormat:@"%ld",(i + 1) * pace];
         CGFloat be = [self sizeOfStringWithMaxSize:XORYLINEMAXSIZE textFont:self.yDescTextFontSize aimString:text].width;
-        textLayer.frame = CGRectMake(self.originSize.x - be - 3, CGRectGetHeight(self.frame) - _originSize.y -height - 5, be, 15);
+        textLayer.frame = CGRectMake(self.originSize.x - be - 3, CGRectGetHeight(self.frame) - _originSize.y - height - 5, be, 15);
         
         UIFont *font = [UIFont systemFontOfSize:self.yDescTextFontSize];
         CFStringRef fontName = (__bridge CFStringRef)font.fontName;
@@ -209,7 +209,7 @@
         
         textLayer.string = text;
         
-        textLayer.foregroundColor = (_drawTextColorForX_Y==nil?[UIColor blackColor].CGColor:_drawTextColorForX_Y.CGColor);
+        textLayer.foregroundColor = (_drawTextColorForX_Y == nil ? [UIColor blackColor].CGColor : _drawTextColorForX_Y.CGColor);
         [self.bgScrollView.layer addSublayer:textLayer];
         [self.layerArr addObject:textLayer];
         
@@ -231,6 +231,11 @@
     [self.layerArr addObject:layer];
 }
 
+- (void)addXShowInfoTextAndColumnView {
+    [self setUpXShowInfoText];
+    [self showColumnView];
+}
+
 //绘制X轴提示语
 - (void)setUpXShowInfoText {
     if (self.xShowInfoText.count == self.valueArr.count && self.xShowInfoText.count > 0) {
@@ -238,7 +243,7 @@
         for (int i = 0; i < self.xShowInfoText.count; i++) {
             CATextLayer *textLayer = [CATextLayer layer];
             CGFloat wid = count * self.columnWidth;
-            CGSize size = [self.xShowInfoText[i]boundingRectWithSize:CGSizeMake(wid, MAXFLOAT) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.xDescTextFontSize]} context:nil].size;
+            CGSize size = [self.xShowInfoText[i] boundingRectWithSize:CGSizeMake(wid, MAXFLOAT) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingTruncatesLastVisibleLine attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.xDescTextFontSize]} context:nil].size;
             textLayer.frame = CGRectMake(i * (self.columnWidth * count + self.typeSpace) + self.typeSpace + self.originSize.x, CGRectGetHeight(self.frame) - self.originSize.y + 5, wid, size.height);
             textLayer.string = self.xShowInfoText[i];
             textLayer.contentsScale = [UIScreen mainScreen].scale;
@@ -250,9 +255,9 @@
             [self.layerArr addObject:textLayer];
         }
     }
-    [self showColumnView];
 }
 
+//添加柱状图
 - (void)showColumnView {
     for (int i = 0; i < self.valueArr.count; i++) {
         NSArray *array = self.valueArr[i];
@@ -260,7 +265,7 @@
             CGFloat height = [array[j] floatValue] * self.perHeight;
             UIView *itemsView = [UIView new];
             [self.allBarShowViewArr addObject:itemsView];
-            itemsView.frame = CGRectMake((i * array.count + j) * _columnWidth + i * _typeSpace + _originSize.x + _typeSpace, CGRectGetHeight(self.frame) - _originSize.y-1, _columnWidth, 0);
+            itemsView.frame = CGRectMake((i * array.count + j) * _columnWidth + i * _typeSpace + _originSize.x + _typeSpace, CGRectGetHeight(self.frame) - _originSize.y - 1, _columnWidth, 0);
             if (self.isShowLineChart) {
                 float valueFloat = [[NSString stringWithFormat:@"%@", self.lineValueArray[i]] floatValue];
                 NSValue *lineValue = [NSValue valueWithCGPoint:Point_M(CGRectGetMaxX(itemsView.frame) - _columnWidth / 2, CGRectGetHeight(self.frame) - valueFloat * _perHeight - _originSize.y -1)];
@@ -346,8 +351,8 @@
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
     if (flag) {
         if (_isShowLineChart) {
-            for (int32_t m=0;m<_lineValueArray.count;m++) {
-                NSLog(@"%@",self.drawLineValueArr[m]);
+            for (int32_t m = 0; m < _lineValueArray.count; m++) {
+                NSLog(@"%@", self.drawLineValueArr[m]);
                 CAShapeLayer *roundLayer = [CAShapeLayer layer];
                 UIBezierPath *roundPath = [UIBezierPath bezierPathWithArcCenter:[self.drawLineValueArr[m] CGPointValue] radius:4.5 startAngle:M_PI_2 endAngle:M_PI_2 + M_PI * 2 clockwise:YES];
                 roundLayer.path = roundPath.CGPath;

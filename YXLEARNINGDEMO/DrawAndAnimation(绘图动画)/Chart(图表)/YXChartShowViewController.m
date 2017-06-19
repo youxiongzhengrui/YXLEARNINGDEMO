@@ -43,6 +43,7 @@
 - (void)showColumnView {
     YXBarChartView *barChartView = [[YXBarChartView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 320)];
     barChartView.bgVewBackgoundColor = [UIColor whiteColor];
+     barChartView.originSize = Point_M(30, 20);
     barChartView.valueArr = @[
                         @[@12],
                         @[@22],
@@ -64,7 +65,6 @@
     barChartView.drawTextColorForX_Y = [UIColor blackColor];
     barChartView.colorForXYLine = [UIColor darkGrayColor];
     barChartView.columnBGcolorsArr = @[[UIColor colorWithRed:72/256.0 green:200.0/256 blue:255.0/256 alpha:1],[UIColor greenColor],[UIColor orangeColor]];
-    barChartView.originSize = Point_M(30, 20);
     barChartView.xShowInfoText = @[@"A班级",@"B班级",@"C班级",@"D班级",@"E班级",@"F班级",@"G班级",@"H班级",@"I班级",@"J班级",@"L班级",@"M班级",@"N班级"];
     barChartView.isShowLineChart = YES;
     barChartView.lineValueArray =  @[@6,
